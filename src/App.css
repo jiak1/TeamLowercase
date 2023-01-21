@@ -1,0 +1,23 @@
+html{
+  height:100%;
+}
+
+body{
+  background: linear-gradient(70.54deg, #4A00E0 23.49%, #8E2DE2 68.31%, #8E2DE2 68.31%);
+}
+
+.display{
+  background-color: white;
+  border-radius: 15px;
+
+
+  min-height:600px;
+  width:80%;
+  max-width:950px;
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+  margin-top:100px;
+}
