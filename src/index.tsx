@@ -1,16 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import App from './App'
+import ShapePalette from './ShapePalette'
+import ErrorPage from './Error'
+import Home from './Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-const queryClient = new QueryClient()
+
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <Home />,
+		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/shape-palette',
+		element: <ShapePalette />,
+	},
+])
 
 root.render(
 	<React.StrictMode>
-		<QueryClientProvider client={queryClient}>
-			<App />
-		</QueryClientProvider>
+		<RouterProvider router={router} />
 	</React.StrictMode>
 )

@@ -1,9 +1,10 @@
 import './App.css'
+import { Helmet } from 'react-helmet'
 
-function App() {
+function ShapePalette() {
 	return (
 		<>
-			<head>
+			<Helmet>
 				<meta
 					name="description"
 					content="Shape Palette is a 2D logic puzzle game, manipulate shapes in order to venture through levels that are sure to test out your skills!"
@@ -12,7 +13,7 @@ function App() {
 					property="og:description"
 					content="Shape Palette is a 2D logic puzzle game, manipulate shapes in order to venture through levels that are sure to test out your skills!"
 				/>
-				<meta property="og:title" content="Team Lowercase" />
+				<meta property="og:title" content="Shape Palette" />
 				<meta
 					property="og:image"
 					content="https://teamlowercase.com/logo512.png"
@@ -21,8 +22,10 @@ function App() {
 					property="og:url"
 					content="https://teamlowercase.com/shape-palette"
 				/>
+				<link rel="icon" href="favicon.ico" />
+				<link rel="apple-touch-icon" href="logo512.png" />
 				<title>Shape Palette</title>
-			</head>
+			</Helmet>
 			<video
 				src="trailer.mp4"
 				playsInline
@@ -47,16 +50,21 @@ function App() {
 						title="Steam Store Widget"
 						className="max-w-xl mx-auto"
 					></iframe>
-					<a
-						href="mailto:shapePalette@teamlowercase.com"
-						className="mx-auto block w-fit mt-2 text-white bg-secondary rounded-md p-2"
-					>
-						Contact
-					</a>
+					<p className="mt-6 text-center">
+						Have a question or issue? Email us at{' '}
+						<a
+							href="mailto:shapepalette@teamlowercase.com"
+							className="font-medium"
+							target="_blank"
+							rel="noreferrer"
+						>
+							shapepalette@teamlowercase.com
+						</a>
+					</p>
 				</div>
 			</div>
 		</>
 	)
 }
 
-export default App
+export default ShapePalette
