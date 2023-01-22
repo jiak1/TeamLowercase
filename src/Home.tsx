@@ -23,7 +23,24 @@ export default function Home() {
 			<div className="mx-auto block w-fit mt-8 md:mt-[20vh] px-8 text-center">
 				<h1 className="font-medium text-6xl">Team Lowercase</h1>
 				<p className="mt-6">
-					An indie game studio created by Jack Donaldson & Robert Hart
+					An Australian indie game studio created by{' '}
+					<a
+						href="https://jackdonaldson.net"
+						target="_blank"
+						className="font-medium"
+						rel="noreferrer"
+					>
+						Jack Donaldson
+					</a>{' '}
+					&{' '}
+					<a
+						href="https://www.roberthart.com.au"
+						target="_blank"
+						className="font-medium"
+						rel="noreferrer"
+					>
+						Robert Hart
+					</a>
 				</p>
 				<h2 className="mt-20 font-medium text-3xl">Our Games</h2>
 				<a href="/shape-palette">

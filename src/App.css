@@ -1,14 +1,32 @@
-html{
-  height:100%;
+html {
+	height: 100%;
 }
 
-body{
-  background: #f3f1ed;
+body {
+	background: #f3f1ed;
 }
 
-video{
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
+.trailer {
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+}
+
+.cellTable td {
+	padding: 10px;
+}
+
+.cellTable td:first-child {
+	border-right: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	padding-left: 0px;
+}
+
+.cellTable td:last-child {
+	border-bottom: 1px solid #bdbdbd;
+}
+
+.cellTable tr:last-child td {
+	border-bottom: none;
 }

@@ -27,7 +27,8 @@ function ShapePalette() {
 				<title>Shape Palette</title>
 			</Helmet>
 			<video
-				src="trailer.mp4"
+				src="/promo.mp4"
+				className="trailer"
 				playsInline
 				autoPlay
 				muted
@@ -59,6 +60,15 @@ function ShapePalette() {
 							rel="noreferrer"
 						>
 							shapepalette@teamlowercase.com
+						</a>
+						<br />
+						You can also view our{' '}
+						<a
+							href="/shape-palette/presskit"
+							className="font-medium"
+							rel="noreferrer"
+						>
+							presskit here
 						</a>
 					</p>
 				</div>

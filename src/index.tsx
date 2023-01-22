@@ -5,6 +5,7 @@ import './index.css'
 import ShapePalette from './ShapePalette'
 import ErrorPage from './Error'
 import Home from './Home'
+import SPPresskit from './SPPresskit'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
 		path: '/',
 		element: <Home />,
 		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/shape-palette/presskit',
+		element: <SPPresskit />,
 	},
 	{
 		path: '/shape-palette',
