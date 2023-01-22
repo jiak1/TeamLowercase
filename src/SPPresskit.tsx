@@ -86,10 +86,6 @@ export default function SPPresskit() {
 									>
 										Steam
 									</a>
-									<br />
-									<a href="" target="_blank" className="font-medium">
-										Humble
-									</a>
 								</td>
 							</tr>
 							<tr>
